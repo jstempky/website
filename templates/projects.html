@@ -1,13 +1,52 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}Joey Stempky - Home{% endblock %}
+{% block title %}Joey Stempky - Projects{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
   <h1>Projects</h1>
-  
-  
+  <div class="container">
 
-</div>	
-{% endblock %}
+    <!-- <h2>Theme Song</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YR5ApYxkU-U" allowfullscreen></iframe>
+    </div> -->
+    <h3>Details</h3>
+      <ul >
+          <li class="list-group-item">
+            <!-- <a href="https://wmich.edu/" target="_blank"> -->
+              <h4>FitFort Mobile App</h4>
+            <!-- </a> -->
+            <ul class="list-group">
+              <li class="list-group-item"><em>Strength Training Data App</em></li>
+              <li class="list-group-item">Status:  Beta Testing (iOS)</li>
+              <li class="list-group-item">Backend:  Python-Flask</li>
+              <li class="list-group-item">Frontend: React-Native (JavaScript)</li>
+              <li class="list-group-item">Hardware:  Arduino, Raspberry Pi</li>
+              <li class="list-group-item">Dev/Testing:  Git, Postman, Docker </li>
+              <li class="list-group-item">Deployment:  App Store Connect, Heroku, Digital Ocean (Ubuntu Droplet), Cloudflare</li>
+              <li class="list-group-item">Other:  TechTown Start Studio Accelerator Fall 2019</li>
+              <li class="list-group-item">SEEKING HELP:  Python, JS, Dev Ops</li>
+            </ul>
+          </li>
+          <li class="list-group-item"> 
+            <!-- <a href="https://wmich.edu/" target="_blank"> -->
+              <h4>HomeFort Mobile App</h4>
+            <!-- </a> -->
+            <ul class="list-group">
+              <li class="list-group-item"><em>Residential Contract Services App</em></li>
+              <li class="list-group-item">Status:  In-Development</li>
+              <li class="list-group-item">Backend:  Python-Flask</li>
+              <li class="list-group-item">Frontend: React-Native (JavaScript)</li>
+              <li class="list-group-item">Hardware:  None </li>
+              <li class="list-group-item">Dev/Testing:  Git, Postman, Docker </li>
+              <li class="list-group-item">Deployment:  In-Development</li>
+              <li class="list-group-item">Other:  None </li>
+              <li class="list-group-item">SEEKING HELP:  Python, JS, Dev Ops</li>
+            </ul>
+          </li>
+
+      </ul>
+  </div>
+  {% endblock %}

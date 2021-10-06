@@ -85,3 +85,7 @@ def projects():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
 	return render_template('contact.html')
+
+@app.route('/skills', methods=['GET', 'POST'])
+def skills():
+	return render_template('skills.html')
