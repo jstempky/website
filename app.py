@@ -10,6 +10,42 @@ from flask_sqlalchemy import SQLAlchemy
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+skill_list = [
+	"Python", 
+	"JavaScript", 
+	"SQL", 
+	"HTML/CSS", 
+	"Heroku",
+	"DigitalOcean",
+	"CloudFlare",
+	"Linux",
+	"MacOS",
+	"Windows",
+	"Raspberry Pi"
+	"Arduino",
+	"Ergonomic Design",
+	"Process Engineering",
+	"FMEA/DFMEA", 
+	"Facility Layout", 
+	"SolidWorks", 
+	"AutoCAD", 
+	"Microsoft Office", 
+	"Oscilloscope", 
+	"Digital Multimeter", 
+	"Soldering",
+	"Biomedical Sciences",
+	"French",
+	"Home Improvement",
+	"Guitar Playing",
+	"Guitar Making",
+	"Piano",
+	"Cooking",
+	"Forklift",
+	"Scissor Lift",
+	"ISO", 
+	"UL/ETL"
+]
+
 from datetime import datetime
 
 app = Flask(__name__)
@@ -88,4 +124,4 @@ def contact():
 
 @app.route('/skills', methods=['GET', 'POST'])
 def skills():
-	return render_template('skills.html')
+	return render_template('skills.html', skills=skill_list)
